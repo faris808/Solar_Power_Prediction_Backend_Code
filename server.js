@@ -1,9 +1,11 @@
 const express = require('express');
 const { exec } = require('child_process');
 const path = require('path');
-const app = express();
-const port = 5000;
 const cors = require('cors');
+require('dotenv').config(); // Load environment variables from .env file
+
+const app = express();
+const port = process.env.PORT || 5000; // Use PORT from .env or default to 5000
 
 // Enable CORS
 app.use(cors());
@@ -38,10 +40,6 @@ app.get('/api/forecast', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
-
-
-
 
 
 

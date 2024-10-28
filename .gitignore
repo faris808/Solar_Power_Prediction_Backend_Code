@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage directory
+coverage/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Optional dependency directories
+jspm_packages/
+bower_components/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Miscellaneous
+*.tgz
+*.lock
+
+
+model1/
+model2_best.keras
